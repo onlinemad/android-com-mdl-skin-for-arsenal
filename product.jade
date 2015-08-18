@@ -1,0 +1,43 @@
+extends layout
+block head
+  style.
+    .meta > * {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      /* -webkit-box-direction: normal; */
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              
+      flex-direction: column;
+    }
+    .mdl-card__media ~ .mdl-card__supporting-text {
+      min-height: 64px;
+    }
+    .mdl-card__supporting-text{
+      width: 100%;
+      padding: 0;
+    }
+    .mdl-card__supporting-text p{
+      padding: 16px;
+    }
+block body
+  .android-more-section
+    .android-card-container.mdl-grid.products
+      .mdl-card.coffee-pic.mdl-cell.mdl-cell--8-col
+        .mdl-card__media.mdl-color-text--grey-50(style='background: url("/static/images/food-restaurant-fruits-orange-1920.jpg") center / cover;min-height: 360px;padding: 24px; display: flex; -webkit-align-items: flex-end;')
+          h3(style='margin: 0; padding: 10px; background-color: rgba(0, 0, 0, 0.4); border-radius: 10px;') 商品
+        .mdl-card__supporting-text.meta.mdl-color-text--grey-600
+          p
+            | 商品描述 
+            br
+      .mdl-card.mdl-cell.mdl-cell--8-col.mdl-cell--4-col-desktop
+        h5 立即購買
+        form(action='#')
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input.mdl-textfield__input(type='text' pattern='-?[0-9]*(\.[0-9]+)?' id='quantity')
+            label.mdl-textfield__label(for='quantity') 數量
+            span.mdl-textfield__error 請輸入數字
+            a.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent(style='top: 100px;') 加入購物車

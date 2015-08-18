@@ -1,0 +1,55 @@
+extends layout
+block head
+  style.
+    .mdl-data-table th {
+      font-size: 16px;
+    }
+block body
+  .android-more-section
+    .android-card-container.mdl-grid
+      .mdl-cell.mdl-cell--12-col.mdl-card.mdl-shadow--3dp
+        .mdl-card__title
+          .mdl-card__title-text 訂單狀態
+        .mdl-card__supporting-text(style='width:auto')
+          .mdl-cell.mdl-cell--12-col.mdl-shadow--3dp(style='padding: 10px;')
+            h5(style='font-size: inherit; margin: 4px 0 4px;') 2015/08/19 14:15:35
+            p 出貨，追蹤編號：1234567890
+          .mdl-cell.mdl-cell--12-col.mdl-shadow--3dp(style='padding: 10px;')
+            h5(style='font-size: inherit; margin: 4px 0 4px;') 2015/08/18 14:15:35
+            p 收到訂單
+      .mdl-cell.mdl-cell--12-col.mdl-card.mdl-shadow--3dp
+        .mdl-card__title
+          .mdl-card__title-text 購物清單
+        .mdl-card__supporting-text(style='width:auto')
+          .mdl-cell.mdl-cell--12-col.mdl-shadow--3dp(style='padding: 10px;')
+            h5(style='font-size: inherit; margin: 4px 0 4px;') 商品A商品B
+            .mdl-grid
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 單價 &nbsp;&nbsp; $100
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 數量 &nbsp;&nbsp; 1
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 小計 &nbsp;&nbsp; $100
+          .mdl-cell.mdl-cell--12-col.mdl-shadow--3dp(style='padding: 10px;')
+            h5(style='font-size: inherit; margin: 4px 0 4px;') 宅配運費
+            .mdl-grid
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 單價 &nbsp;&nbsp; $135
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 小計 &nbsp;&nbsp; $135
+          div(style='text-align: right;width: 100%;')
+            h6(style='color: rgb(158, 158, 158);') 總金額　NT$ 1,788
+      .mdl-cell.mdl-cell--12-col.mdl-card.mdl-shadow--3dp
+        .mdl-card__title
+          .mdl-card__title-text 運送資訊
+        .mdl-card__supporting-text(style='width:auto')
+          table.mdl-data-table.mdl-js-data-table.mdl-shadow--2dp(style='width:100%')
+            tbody
+              tr
+                th.mdl-data-table__cell--non-numeric 運送方式
+                th.mdl-data-table__cell--non-numeric 面交
+              tr
+                td.mdl-data-table__cell--non-numeric 姓名
+                td.mdl-data-table__cell--non-numeric 王小明
+              tr
+                td.mdl-data-table__cell--non-numeric 電話
+                td.mdl-data-table__cell--non-numeric 0919919919
+              tr
+                td.mdl-data-table__cell--non-numeric 地址
+                td.mdl-data-table__cell--non-numeric 台北市信義區市府路45號

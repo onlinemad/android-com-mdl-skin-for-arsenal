@@ -1,0 +1,117 @@
+doctype html
+//
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  https://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='description', content='Introducing Lollipop, a sweet new take on Android.')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |     
+    title Android
+    // Page styles
+    link(href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(rel='stylesheet', href='https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/static/css/styles.css')
+    style.
+      #social_link a{
+        padding: 10px;
+      }
+      #view-source {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+      }
+    block head
+  body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      .android-header.mdl-layout__header.mdl-layout__header--waterfall
+        .mdl-layout__header-row
+          span.android-title.mdl-layout-title
+            img.android-logo-image(src='/static/images/logo.png')
+          //- Add spacer, to align navigation to the right in desktop
+          .android-header-spacer.mdl-layout-spacer
+          //- Navigation
+          .android-navigation-container
+            nav.android-navigation.mdl-navigation
+              a.mdl-navigation__link.mdl-typography--text-uppercase(href='/search_order') 查詢訂單
+              //- a.mdl-navigation__link.mdl-typography--text-uppercase(href='') 商品分類A
+              //- a.mdl-navigation__link.mdl-typography--text-uppercase(href='') 商品分類B
+              //- a.mdl-navigation__link.mdl-typography--text-uppercase(href='') 商品分類C
+              //- a.mdl-navigation__link.mdl-typography--text-uppercase(href='') 聯絡我們
+          span.android-mobile-title.mdl-layout-title
+            img.android-logo-image(src='/static/images/logo.png')
+      |       
+      .android-drawer.mdl-layout__drawer
+        span.mdl-layout-title
+          img.android-logo-image(src='/static/images/logo.png')
+        |         
+        nav.mdl-navigation
+          a.mdl-navigation__link(href='/search_order') 查詢訂單
+          //- a.mdl-navigation__link(href='') 商品分類A
+          //- a.mdl-navigation__link(href='') 商品分類B
+          //- a.mdl-navigation__link(href='') 商品分類C
+          //- a.mdl-navigation__link(href='') 聯絡我們
+          .android-drawer-separator
+          |           
+          span.mdl-navigation__link(href='') 我的購物
+          a.mdl-navigation__link(href='/cart') 購物車
+      |       
+      .android-content.mdl-layout__content
+        //- .android-more-section
+        block body
+        footer.android-footer.mdl-mega-footer
+          .mdl-mega-footer--top-section
+            #social_link.mdl-mega-footer--left-section
+              a(href='')
+                i.fa.fa-facebook-official.fa-3x
+              a(href='')
+                i.fa.fa-twitter.fa-3x
+              a(href='')
+                i.fa.fa-google-plus-square.fa-3x
+            |             
+            .mdl-mega-footer--right-section
+              a.mdl-typography--font-light(href='#top')
+                | 回到頁首
+                i.material-icons expand_less
+          |           
+          .mdl-mega-footer--middle-section
+            p.mdl-typography--font-light Theme from 
+             a(href='http://www.getmdl.io/templates/android-dot-com/index.html') ANDROID.COM MDL SKIN
+           p.mdl-typography--font-light Photo from 
+            a(href='https://unsplash.com/') unsplash.com
+            | &nbsp;
+            a(href='http://www.pexels.com/') PEXELS
+            p.mdl-typography--font-light Modified by 
+             a(href='https://github.com/onlinemad/android-com-mdl-skin-for-arsenal') onlinemad
+          .mdl-mega-footer--bottom-section
+            //- a.android-link.mdl-typography--font-light(href='') 關於本店
+            //- a.android-link.mdl-typography--font-light(href='') Blog
+            //- a.android-link.mdl-typography--font-light(href='') 購物須知
+    |     
+    //- button#view-source.mdl-button.mdl-js-button
+    #view-source
+      a(href='/cart')
+        .material-icons.mdl-badge(data-badge='0') local_grocery_store
+        //- i.material-icons local_grocery_store
+    |     
+    script(src='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js')

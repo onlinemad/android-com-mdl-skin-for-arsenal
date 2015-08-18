@@ -1,0 +1,40 @@
+extends layout
+block head
+  style.
+    .mdl-data-table th {
+      font-size: 16px;
+    }
+block body
+  .android-more-section
+    .android-card-container.mdl-grid.products
+      .mdl-cell.mdl-cell--12-col.mdl-card.mdl-shadow--3dp
+        .mdl-card__title
+          .mdl-card__title-text 購物清單
+        .mdl-card__supporting-text(style='width:auto')
+          .mdl-cell.mdl-cell--12-col.mdl-shadow--3dp(style='padding: 10px;')
+            div
+              h5(style='font-size: inherit; margin: 4px 0 4px;') 一二三四五六七八九十一二三四五六七八九
+              .mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--mini-fab.mdl-button--colored(style='float: right; top: -45px; left: 20px; max-width: 20px; min-width: 20px; max-height: 20px;')
+                i.material-icons(style='font-size: 16px;') clear
+            .mdl-grid
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 單價 &nbsp;&nbsp; $100
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 數量 &nbsp;&nbsp; 
+                select
+                  option 1
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 小計 &nbsp;&nbsp; $100
+          .mdl-cell.mdl-cell--12-col.mdl-shadow--3dp(style='padding: 10px;')
+            div
+              h5(style='font-size: inherit; margin: 4px 0 4px;') 一二三四五六七八九十一二三四五六七八九
+              .mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--mini-fab.mdl-button--colored(style='float: right; top: -45px; left: 20px; max-width: 20px; min-width: 20px; max-height: 20px;')
+                i.material-icons(style='font-size: 16px;') clear
+            .mdl-grid
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 單價 &nbsp;&nbsp; $100
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 數量 &nbsp;&nbsp; 
+                select
+                  option 1
+              .mdl-cell.mdl-cell--4-col.mdl-cell--1-col-phone 小計 &nbsp;&nbsp; $100
+          div(style='text-align: right;width: 100%;')
+            h6(style='color: rgb(158, 158, 158);') 總金額　NT$ 1,788
+      div(style='text-align: right;width: 100%;')
+        a.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored(style='top : 50px; float: left;', href='/products') 再買更多
+        a.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent(style='top: 50px;', href='/checkout_shipping') 結帳去

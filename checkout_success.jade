@@ -1,0 +1,18 @@
+extends layout
+block head
+  style.
+    .mdl-data-table th {
+      font-size: 16px;
+    }
+block body
+  .android-more-section
+    .android-card-container.mdl-grid
+      .mdl-cell.mdl-cell--12-col.mdl-card.mdl-shadow--3dp
+        .mdl-card__title
+          .mdl-card__title-text 結帳完成
+        .mdl-card__supporting-text(style='width:auto')
+          p 感謝您購買本店的商品
+          p 這是您的訂單編號 20150818_1234567890
+          p 您可以進入
+           a(href='#') 查詢訂單
+           | 頁面查詢您的訂單進度
